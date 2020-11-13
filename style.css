@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: url(./img/cederic-x-21DP3hytVHw-unsplash.jpg) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Utility Classes */
+
+.width-full {
+  width: 100%;
+}
+
+.input-p {
+  padding: 0.7rem;
+}
+
+.input-r {
+  border-radius: 5px;
+}
+
+.label-m {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Section: Header */
+#main {
+  max-width: 750px;
+  margin: auto;
+}
+
+#title {
+  font-family: "Philosopher";
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem 0 0.3rem 0;
+}
+
+p#description {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+hr.hr-style {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+  margin-bottom: 1rem;
+}
+
+/* Section: Form */
+#survey-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 3rem;
+}
+
+#main #survey-form .form-items {
+  margin-bottom: 1.5rem;
+}
+
+span.optional {
+  font-size: 0.9rem;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  transform: scale(1.5);
+  margin: 0.5rem 0.5rem 1rem 0.32rem;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  transform: scale(1.5);
+  margin: 0.5rem 0.5rem 1rem 0.32rem;
+}
+
+#dropdown {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #474747;
+}
+
+/* Range input */
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: white;
+  height: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: white;
+  height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: gray;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background: gray;
+  margin-top: -5px;
+  border-radius: 50%;
+}
+
+button {
+  padding: 0.8rem 0;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.3rem;
+  background-color: #4eb5f1;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #4095c6;
+  cursor: pointer;
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  #main {
+    max-width: 550px;
+    margin: auto;
+  }
+}

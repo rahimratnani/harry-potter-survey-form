@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900|Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Harry Potter Survey Form</title>
+</head>
+<body>
+    <main id="main">
+       <h1 id="title">Harry Potter Survey</h1>
+       <hr class="hr-style">
+       <p id="description">Please take this survey if you are a Harry Potter fan.</p>
+       <form id="survey-form" action="">
+           <div class="form-items">
+               <label class="label-m" for="name" id="name-label">Name</label><br>
+               <input class="width-full input-p input-r" type="text" name="name" id="name" required placeholder="Enter your name">
+           </div>
+           <div class="form-items">
+               <label class="label-m" for="email" id="email-label">Email</label><br>
+               <input class="width-full input-p input-r" type="email" name="email" id="email" required placeholder="Enter your email">
+           </div>
+           <div class="form-items">
+               <label class="label-m" for="number" id="number-label">Age 
+                   <span class="optional">(optional)</span>
+                </label>
+                <input class="width-full input-p input-r" type="number" name="age" id="number" min="14" max="100" placeholder="Age">
+           </div>
+           <div class="form-items">
+               <p class="label-m">Have you read all the Harry Potter books?</p><br>
+               <input type="radio" name="read-all-books" id="yes" value="yes">
+               <label for="yes">Yes</label><br>
+               <input type="radio" name="read-all-books" id="few" value="few">
+               <label for="few">A few of them but not all of them</label><br>
+               <input type="radio" name="read-all-books" id="no" value="no">
+               <label for="no">No</label>
+           </div>
+           <div class="form-items">
+               <label class="label-m" for="dropdown">Favourite Story? Book Or Movie</label><br>
+               <select class="width-full input-p" name="story" id="dropdown">
+                   <option value="" disabled selected>Please choose an option</option>
+                   <option value="philosopher's stone">Philosopher's Stone</option>
+                   <option value="chamber of secrets">Chamber Of Secrets</option>
+                   <option value="prisoner of azkaban">Prisoner Of Azkaban</option>
+                   <option value="goblet of fire">Goblet Of Fire</option>
+                   <option value="order of the phoenix">Order Of The Phoenix</option>
+                   <option value="half-blood prince">Half-Blood Prince</option>
+                   <option value="deathly hallows">Deathly Hallows</option>
+                   <option value="none">None</option>
+               </select>
+           </div>
+           <div class="form-items">
+                <label class="label-m" for="fanRange">On a scale of 1-5 how much of Harry Potter fan are you? (1 is barley and 5 is obsessed with it):</label><br>
+                <input class="width-full" type="range" id="fanRange" name="fanRange" min="1" max="5">
+           </div>
+           <div class="form-items">
+               <p class="label-m">What is your Hogwarts house?</p>
+               <div class="check-item">
+                   <input type="checkbox" name="house" id="gryffindor" value="gryffindor">
+                   <label for="gryffindor">Gryffindor</label>
+               </div>
+               <div class="check-item">
+                   <input type="checkbox" name="house" id="slytherin" value="slytherin">
+                   <label for="slytherin">Slytherin</label>
+               </div>
+               <div class="check-item">
+                   <input type="checkbox" name="house" id="hufflepuff" value="hufflepuff">
+                   <label for="hufflepuff">Hufflepuff</label>
+               </div>
+               <div class="check-item">
+                   <input type="checkbox" name="house" id="ravenclaw" value="ravenclaw">
+                   <label for="ravenclaw">Ravenclaw</label>
+               </div>
+               <div class="check-item">
+                   <input type="checkbox" name="house" id="i-don't-know" value="i-don't-know">
+                   <label for="i-don't-know">I don't know</label>
+               </div>
+           </div>
+           <div class="form-items">
+               <label class="label-m" for="comments">Has harry potter influenced your life positively? How?</label><br>
+               <textarea class="width-full input-p input-r" name="comments" id="comments" cols="30" rows="6" placeholder="Enter your comments here..."></textarea>
+           </div>
+           <button class="width-full" id="submit" type="submit" value="Submit">Submit</button>
+       </form>
+       <footer>
+           <p>Created by Rahim Ratnani as a part of freeCodeCamp curriculum.</p>
+       </footer>
+    </main>
+</body>
+</html>
